@@ -148,7 +148,8 @@ button {
 
 .socials {
   text-align: center;
-  margin-top: 59px; }
+  margin-top: 59px; 
+margin-bottom: 10px;}
 
 .socials-icon {
   display: inline-flex;
@@ -174,10 +175,12 @@ p {
   color: #ffff66;
   font-size: 20px;
   margin-bottom: 22px; }
+
+  
 .demo{
   font-family: "Muli-SemiBold";
   color: #ff0404;
-  font-size: 20px; }
+  }
 
 
 @media (max-width: 1500px) {
@@ -230,3 +233,29 @@ p {
     width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: rgba(255, 89, 205, 0.952);
+  padding: 5px 0;
+  color: #fff;
+  font-size: 14px;
+  position: d-flex;
+}
+
+#footer .copyright {
+  text-align: center;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .credits a {
+  color: #ffffff;
+}

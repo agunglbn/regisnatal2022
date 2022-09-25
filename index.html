@@ -31,9 +31,11 @@
 					<p>Registrasi Anggota Natal Remaja Naposo HKBP Beringin Indah 2022</p>
 				</div>
 
-				<div class="form-header alert alert-danger" role="alert">
-					<h5><b>Form Ditutup Dalam <pr class="demo" id="demo"></pr>...</b></h5>
+				<div class="form-header alert alert-danger count" role="alert">
+					<small><h7><b>Form Ditutup Dalam <pr class="demo" id="demo"></pr>...</b></h7></small><br>
+					<strong><small>02 Oct 2022 24 : 00 : 00 WIB</small></strong>
 				</div>
+				
 				<div class="form-group">
 					<label for="">Nama Lengkap :</label>
 					<input type="text" class="form-control" name="nama" required placeholder="Your Name">
@@ -45,7 +47,7 @@
 				</div>
 				<div class="form-group">
 					<label for="">Umur :</label>
-					<input type="text" onkeypress="return event.charCode >= 48 && event.charCode <=58" name="nowa"
+					<input type="text" onkeypress="return event.charCode >= 48 && event.charCode <=58" name="umur"
 						class="form-control" required maxlength="2">
 				</div>
 
@@ -104,10 +106,23 @@
 		</div>
 
 	</div>
-
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Humas & HID Natal HKBP Beringin Indah</span></strong>.
+      </div>
+      <div class="credits">
+       
+        <b><a href="">Terimakasih </a></b> 
+      </div>
+    </div>
+  </footer><!-- End #footer -->
 	<script>
+		
+
 		// Mengatur waktu akhir perhitungan mundur
-		var countDownDate = new Date("Oct 01, 2022 24:00:00").getTime();
+		var countDownDate = new Date("Oct 02, 2022 24:00:00").getTime();
 
 		// Memperbarui hitungan mundur setiap 1 detik
 		var x = setInterval(function () {
@@ -125,8 +140,8 @@
 			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 			// Keluarkan hasil dalam elemen dengan id = "demo"
-			document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-				+ minutes + "m " + seconds + "s ";
+			document.getElementById("demo").innerHTML = days + " Day " + hours + " Hours "
+				+ minutes + " Minute " + seconds + " Second ";
 
 			// Jika hitungan mundur selesai, tulis beberapa teks 
 			if (distance < 0) {
